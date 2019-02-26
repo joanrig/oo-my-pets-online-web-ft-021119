@@ -40,7 +40,6 @@ class Owner
 
   def pets
     @pets = {fishes: [], cats: [], dogs: []}
-    @pets = self.pets
   end
 
   def buy_fish(name)
