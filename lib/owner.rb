@@ -5,6 +5,7 @@ class Owner
   attr_accessor :pets, :name
   attr_reader :species
 
+
   @@all = []
 
   def initialize(name)
@@ -37,13 +38,13 @@ class Owner
     @name = name
   end
 
-  def pets
+  def self.pets
     @pets = {fishes: [], cats: [], dogs: []}
   end
 
   def buy_fish(name)
     @pets[:fishes] << Fish.new(name)
-    #binding.pry
+    binding.pry
   end
 
   def buy_cat(name)
